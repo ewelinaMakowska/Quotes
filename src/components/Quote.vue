@@ -1,17 +1,17 @@
 <template>
-    <div>
-        <slot> </slot>
+    <div class="col-lg-6 col-m-6">
+    <div class="quote">
+        <slot></slot>
     </div>
+        </div>
 </template>
 
 <script>
-export default {
- 
-}
+
 </script>
 
 <style scoped>
-div {
+.quote {
     font-family: 'Roboto', sans-serif;
     border: 4px solid blueviolet;
     padding: 30px;
@@ -19,5 +19,11 @@ div {
     color: #555;
     font-size: 20px;
     text-align: center;
+    transition: 0.3s
+}
+
+.quote:hover {
+ border: 4px solid red;  
+ cursor: pointer
 }
 </style>
